@@ -21,7 +21,11 @@ body{
 
 .container-wrapper .sidebar-wrapper{
     display: grid;
-    justify-content: start;
+    row-gap: 15px;
+    height:100vh;
+    padding-bottom: 170px;
+    padding-top: 10px;
+    padding-left: 15px;
     grid-template-columns: 0.5fr 2fr;
     align-items: center;
     background-color: #1992d4;
@@ -37,6 +41,8 @@ body{
 
 .sidebar-wrapper span{
     color: white;
+    font-size: 18px;
+    font-weight: 600;
     height: auto;
 }
 
@@ -45,6 +51,16 @@ body{
     font-weight: 900;
     margin-bottom: 30px;
     
+}
+span + img:nth-child(13){
+    margin-bottom: 50px;
+    
+}
+
+
+img + span:nth-child(14){
+    margin-bottom: 50px;
+
 }
 
 .sidebar-wrapper img{
