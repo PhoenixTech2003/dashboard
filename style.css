@@ -82,7 +82,10 @@ img + span:nth-child(14){
     padding-top: var(--top-padding);
     display: grid;
     align-items: center;
-    grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    column-gap: 20px;
+    grid-template-columns: 0.2fr 4fr 1fr 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 input[type = "search"]{
@@ -95,10 +98,17 @@ input[type = "search"]{
 
 .notification{
     grid-column: 4 / 5;
+    justify-self: end;
 }
 .description-picture{
+    justify-self: end;
     width: 50px;
     height: 50px;
     background-color: #f7ca15;
     border-radius: 30px;
+}
+
+.description-picture + p {
+    font-size: 20px;
+    font-weight: 900;
 }
