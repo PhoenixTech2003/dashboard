@@ -73,7 +73,7 @@ img + span:nth-child(14){
     width: 40px;
     height: auto;
 }
-.search-icon img{
+.icon img{
     width: 30px;
     height: auto;
 }
@@ -82,7 +82,7 @@ img + span:nth-child(14){
     padding-top: var(--top-padding);
     display: grid;
     align-items: center;
-    grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr 1fr;
 }
 
 input[type = "search"]{
@@ -91,4 +91,8 @@ input[type = "search"]{
     padding: 5px;
     font-size: 15px;
     border-radius: 10px;
+}
+
+.notification{
+    grid-column: 4 / 5;
 }
