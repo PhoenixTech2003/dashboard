@@ -80,6 +80,7 @@ img + span:nth-child(14){
 
 .header{
     padding-top: var(--top-padding);
+    padding-left: 25px;
     display: grid;
     align-items: center;
     align-content: center;
@@ -124,4 +125,9 @@ p + .description-picture  {
     border-radius: 40px;
     font-size: 40px;
     
+}
+
+.salutation p:nth-child(2){
+    font-size: 25px;
+    font-weight: 900;
 }
