@@ -101,7 +101,12 @@ input[type = "search"]{
     justify-self: end;
 }
 .description-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: end;
+    font-size: 30px;
+    font-weight: 900;
     width: 50px;
     height: 50px;
     background-color: #f7ca15;
@@ -111,4 +116,12 @@ input[type = "search"]{
 .description-picture + p {
     font-size: 20px;
     font-weight: 900;
+}
+
+p + .description-picture  {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    font-size: 40px;
+    
 }
