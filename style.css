@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --top-padding:10px;
+
+
+}
+
 
 @font-face {
     font-family: "roboto";
@@ -24,7 +30,7 @@ body{
     row-gap: 15px;
     height:100vh;
     padding-bottom: 170px;
-    padding-top: 10px;
+    padding-top: var(--top-padding);
     padding-left: 15px;
     grid-template-columns: 0.5fr 2fr;
     align-items: center;
@@ -66,4 +72,23 @@ img + span:nth-child(14){
 .sidebar-wrapper img{
     width: 40px;
     height: auto;
+}
+.search-icon img{
+    width: 30px;
+    height: auto;
+}
+
+.header{
+    padding-top: var(--top-padding);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.2fr 4fr 1fr 1fr 1fr;
+}
+
+input[type = "search"]{
+    background-color: #e2e8f0;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
 }
