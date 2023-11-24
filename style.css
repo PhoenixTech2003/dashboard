@@ -187,11 +187,16 @@ p + .description-picture  {
 }
 
 .project-card{
+    display: grid;
+    grid-template-columns: 0.03fr 2fr;
     background-color: white;
     box-shadow: 1px 1px 1px 1px #4c4646;
     border-radius: 10px;
     
     
     
+}
+.bar{
+    background-color: #f7ca15;
 }
 
